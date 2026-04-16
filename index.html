@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morena Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+<header id="header">
+  <div class="container">
+
+    <div class="logo-area">
+      <img src="https://i.pinimg.com/736x/ad/d2/bb/add2bbc8671e8158d0442b99c8153276.jpg" alt="logo">
+      <h2 class="logo">Morena Coffee</h2>
+    </div>
+
+    <!-- ikon menu -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="nav-menu">
+      <a href="#hero">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+ 
+  <section id="hero">
+    <div class="container">
+      <h1>Kopi Terbaik dari Sulawesi</h1>
+      <p>Diseduh dengan cinta dari biji kopi pilihan Toraja, Ponre, dan Bajiminasa.</p>
+      <a href="#menu" class="tombol">Lihat Menu</a>
+    </div>
+  </section>
+
+  <!-- MENU (OUR SERVICES) -->
+  <section id="menu">
+    <div class="container">
+      <h2>Menu Kami</h2>
+      <p>Pilihan kopi terbaik yang kami sajikan setiap hari.</p>
+
+      <div class="kartu-grid">
+
+        <div class="kartu">
+          <div class="gambar-kartu coklat-gelap"></div>
+          <h3>Black Toraja</h3>
+          <p>Espresso bold dari dataran tinggi Toraja dengan aroma coklat gelap.</p>
+          <div class="harga-area">
+           <b>Rp 45.000</b>
+           <button class="icon-keranjang">🛒</button>
+            </div>
+        </div>
+
+        <div class="kartu">
+          <div class="gambar-kartu coklat-muda"></div>
+          <h3>Caramel Cloud</h3>
+          <p>Latte oat milk dengan foam karamel asin yang lembut dan manis.</p>
+          <div class="harga-area">
+           <b>Rp 45.000</b>
+           <button class="icon-keranjang">🛒</button>
+          </div>
+        </div>
+
+        <div class="kartu">
+          <div class="gambar-kartu biru-gelap"></div>
+          <h3>Midnight Cold Brew</h3>
+          <p>Cold brew 18 jam dari biji Flores. Segar dan halus di tenggorokan.</p>
+          
+          <div class="harga-area">
+            <b>Rp 38.000</b>
+            <button class="icon-keranjang">🛒</button>
+          </div>
+        </div>
+
+        <div class="kartu">
+          <div class="gambar-kartu hitam-gelap"></div>
+          <h3>Americano</h3>
+          <p>Americano yang diencerkan dengan air panas, memberikan rasa kopi yang lembut.</p>
+          <div class="harga-area">
+            <b>Rp 35.000</b>
+            <button class="icon-keranjang">🛒</button>
+          </div>
+        </div>
+
+        <div class="kartu">
+          <div class="gambar-kartu kuning-gelap"></div>
+          <h3>Flat White</h3>
+          <p>Flat white dengan kandungan espresso dan susu yang lebih sedikit, memberikan rasa kopi yang lebih kuat.</p>
+          <div class="harga-area">
+            <b>Rp 42.000</b>
+            <button class="icon-keranjang">🛒</button>
+          </div>
+        </div>
+
+        <div class="kartu">
+          <div class="gambar-kartu hijau-gelap"></div>
+          <h3>Affogato</h3>
+          <p>Affogato dengan es krim vanila dan espresso, memberikan sensasi manis dan kopi yang khas.</p>
+          <div class="harga-area">
+            <b>Rp 48.000</b>
+            <button class="icon-keranjang">🛒</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="info">
+    <div class="container dua-kolom">
+      <div>
+        <div class="gambar-besar"></div>
+        <div class="statistik">
+          <div class="angka">
+            <b>6+</b>
+            <span>Tahun Berdiri</span>
+          </div>
+          <div class="angka">
+            <b>12K</b>
+            <span>Pelanggan</span>
+          </div>
+          <div class="angka">
+            <b>8</b>
+            <span>Asal Kopi</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Cerita Kami</h2>
+        <p>Morena dimulai tahun 2018 dari sebuah kedai kecil di Bulukummba. Pendiri kami percaya bahwa kopi lokal Indonesia layak dinikmati setara kopi dunia.</p>
+        <p>Kami bekerja langsung bersama petani di Toraja, Ponre, dan Bajiminasa untuk memastikan kualitas terbaik di setiap cangkir.</p>
+        <blockquote>
+          "Kopi bukan sekadar minuman. Ia adalah percakapan antara tanah, petani, dan kamu."
+          <br><i>— Andi Rahmat, Founder</i>
+        </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container dua-kolom">
+
+      <!-- Kolom kiri: tentang kami -->
+      <div>
+        <h2>Tentang Kami</h2>
+        <p>Morena bukan sekadar kedai kopi. Kami adalah ruang komunitas yang mengadakan workshop barista dan pasar lokal setiap minggu.</p>
+        <p>Kami percaya bahwa setiap cangkir kopi memiliki cerita. Oleh karena itu, kami bekerja sama langsung dengan petani kopi lokal untuk memastikan kualitas biji kopi terbaik sekaligus mendukung keberlanjutan pertanian kopi di Indonesia.</p>
+        <p>Dengan suasana yang hangat dan nyaman, Morena menjadi tempat yang cocok untuk bekerja, berdiskusi, ataupun sekadar menikmati waktu santai bersama teman dan keluarga.</p>
+      <ul>
+        <li>✔ Kopi langsung dari petani mitra</li>
+        <li>✔ Bebas plastik sekali pakai sejak 2021</li>
+        <li>✔ Best Specialty Cafe Bulukumba 2023 & 2024</li>
+      </ul>
+      </div>
+
+      <div>
+        <div id="peta">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3972.215518673085!2d120.1458611!3d-5.384083299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1776166976480!5m2!1sid!2sid"
+          width="100%" 
+          height="300px" 
+          style="border:0; border-radius:8px;"
+         allowfullscreen="" 
+         loading="lazy">
+       </iframe>
+      </div>
+        <p>📍 J48W+989 Bajiminasa, Kabupaten Bulukumba, Sulawesi Selatan</p>
+        <p>🕐 Buka setiap hari, 07.00 – 22.00</p>
+        <p>📞 +6282396657380</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <p>Punya pertanyaan? Kirim pesan ke kami.</p>
+
+      <form action="https://formspree.io/f/xjgjkkzl" method="POST">
+  <div class="form-baris">
+    <input type="text" name="nama" placeholder="Nama kamu" class="input" autocomplete="name" required>
+    <input type="email" name="email" placeholder="Email kamu" class="input" autocomplete="email" required>
+  </div>
+    <textarea name="pesan" placeholder="Tulis pesanmu..." class="input" rows="4" autocomplete="off" required></textarea>
+    <button type="submit" class="tombol">Kirim Pesan</button>
+  </form>
+
+    <p class="hak-cipta">© 2025 Morena Coffee. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  
+</body>
+</html>
