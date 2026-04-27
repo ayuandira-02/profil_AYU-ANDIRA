@@ -1,0 +1,72 @@
+body {
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registrasi {
+    background-color: #3E2723;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+
+}
+
+.login {
+    background-color: #3E2723;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.formcard {
+    padding: 30px;
+    margin-bottom: 5px;
+}
+
+.formcard h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formcard p {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formcard a {
+    color: #C8852A;
+    text-decoration: none;
+}
+
+
+.formcard label {
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #C8852A;
+    color: white;
+}

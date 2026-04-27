@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="login">
+            <div class="formcard">
+                <h1>Login</h1>
+
+                <form action="Halaman Utama.html">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" required><br><br>
+
+                    <input type="submit" value="Login" onclick="return validasi()">
+
+                    <p>Belum punya akun? <a href="registrasi.html">Daftar</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function validasi() {
+
+            const nama = document.getElementById('nama').value;
+            const password = document.getElementById('password').value;
+
+            if (nama === "" && password === "") {
+                alert("Kolom harus di isi");
+                return false;
+            }
+
+            if (nama === "") {
+                alert("Nama wajib di isi");
+                return false;
+            }
+
+            if (password === "") {
+                alert("Password harus di isi");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Password harus lebih dari 8 karakter");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

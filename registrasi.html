@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+    </header>
+
+    <!--Main-->
+    <main>
+        <section class="registrasi">
+
+            <div class="formcard">
+                <h1>Registrasi</h1>
+
+                <!-- bagian nama -->
+                <form action="login.html">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" required><br><br>
+
+                    <!-- bagian password -->
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" required><br><br>
+
+                    <input type="submit" value="Daftar" onclick="return validasi()">
+                    <p>Sudah punya akun? <a href="login.html">Login</a></p>
+                </form>
+            </div>
+
+            <!-- Script Validasi -->
+            <script>
+                function validasi() {
+
+                    const nama = document.getElementById('nama').value;
+                    const password = document.getElementById('password').value;
+
+                    if (nama === "" && password === "") {
+                        alert("Kolom harus di isi");
+                        return false;
+                    }
+
+                    if (nama === "") {
+                        alert("Nama wajib di isi");
+                        return false;
+                    }
+
+                    if (password === "") {
+                        alert("Password harus di isi");
+                        return false;
+                    }
+
+                    if (password.length < 8) {
+                        alert("Password harus lebih dari 8 karakter");
+                        return false;
+                    }
+
+                    return true;
+                }
+            </script>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
