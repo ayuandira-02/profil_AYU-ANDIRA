@@ -23,6 +23,9 @@
                     <label for="nama">Nama:</label><br>
                     <input type="text" id="nama" required><br><br>
 
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" required><br><br>
+
                     <label for="password">Password:</label><br>
                     <input type="password" id="password" required><br><br>
 
@@ -38,15 +41,26 @@
         function validasi() {
 
             const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
-            if (nama === "" && password === "") {
+            if (nama === "" && email === "" && password === "") {
                 alert("Kolom harus di isi");
                 return false;
             }
 
             if (nama === "") {
                 alert("Nama wajib di isi");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Email wajib di isi");
+                return false;
+            }
+
+            if (!email.includes("@")) {
+                alert("Email harus mengandung karakter @");
                 return false;
             }
 
