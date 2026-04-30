@@ -71,3 +71,17 @@ input[type="submit"]:hover {
     background-color: #C8852A;
     color: white;
 }
+
+@media (max-width: 600px) {
+    body{
+        padding: 20px;
+        height: 100vh;
+    }
+
+    .registrasi,
+    .login{
+        max-width: 350px;
+        width: 100%;
+        margin: auto;
+    }
+}
