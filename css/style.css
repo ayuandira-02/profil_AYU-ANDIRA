@@ -73,15 +73,18 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 600px) {
-    body{
-        padding: 20px;
-        height: 100vh;
-    }
 
     .registrasi,
     .login{
+        width: 90%;
         max-width: 350px;
-        width: 100%;
         margin: auto;
     }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]{
+        width: 100%;
+    }
+
 }
