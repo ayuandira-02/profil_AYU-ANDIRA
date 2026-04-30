@@ -9,7 +9,7 @@ body {
 
 .registrasi {
     background-color: #3E2723;
-    width: 100%;
+    width: 350px;
     padding: 20px;
     flex-direction: column;
     border-radius: 5px;
@@ -18,7 +18,7 @@ body {
 
 .login {
     background-color: #3E2723;
-    width: 100%;
+    width: 350px;
     padding: 20px;
     flex-direction: column;
     border-radius: 5px;
