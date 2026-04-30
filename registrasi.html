@@ -36,6 +36,10 @@
                     <label for="password">Password:</label><br>
                     <input type="password" id="password" required><br><br>
 
+                    <!-- bagian konfirmasi password -->
+                    <label for="confirm_password">Konfirmasi Password:</label><br>
+                    <input type="password" id="confirm_password" required><br><br>
+
                     <input type="submit" value="Daftar" onclick="return validasi()">
                     <p>Sudah punya akun? <a href="login.html">Login</a></p>
                 </form>
@@ -46,9 +50,11 @@
                 function validasi() {
 
                     const nama = document.getElementById('nama').value;
+                    const email = document.getElementById('email').value;
                     const password = document.getElementById('password').value;
+                    const confirm_password = document.getElementById('confirm_password').value;
 
-                    if (nama === "" && password === "") {
+                    if (nama === "" && email === "" && password === "" && confirm_password === "") {
                         alert("Kolom harus di isi");
                         return false;
                     }
@@ -58,8 +64,25 @@
                         return false;
                     }
 
+                    if (email === "") {
+                        alert("Email wajib di isi");
+                        return false;
+                    }
+                    if (!email.includes("@")) {
+                        alert("Email harus mengandung karakter @");
+                        return false;
+                    }
                     if (password === "") {
                         alert("Password harus di isi");
+                        return false;
+                    }
+                    if (password !== confirm_password) {
+                        alert("Password dan konfirmasi password tidak cocok");
+                        return false;
+                    }
+                    
+                    if (confirm_password === "") {
+                        alert("Konfirmasi password harus di isi");
                         return false;
                     }
 
